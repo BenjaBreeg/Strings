@@ -1,0 +1,63 @@
+/* Benja Guzzetta */
+
+/* General styling for the body of the page. */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: firebrick;
+    text-align: center;
+}
+
+/* Styling for the main heading (h1) tag. */
+h1 {
+    font-size: large;
+    color: firebrick;
+    margin-top: 20px;
+}
+
+/* Styling for paragraph (p) tags on the page. */
+p {
+    color: firebrick;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+/* Styling for the user input field and button. */
+input[type="text"], button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* Styling for the button. */
+button {
+    background-color: firebrick;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for the division (div) where user results are displayed. */
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid firebrick;
+    border-radius: 10px;
+    background-color: black;
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+}
+
+/* Styling for my meme image. */
+img {
+    max-width: 35%;
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid firebrick;
+    border-radius: 40px;
+}
