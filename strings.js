@@ -33,4 +33,29 @@ function checkPalindrome() {
     // This clears the input field after checking, so the user can enter another string.
     document.getElementById('userInput').value = '';
 }
-// Good-lookin' function right there! Lol.
+
+// The new function added to validate user's full name and zip code.
+function userValidate() {
+    // This part gets the user's first and last name, and zip code from the input fields.
+    var firstName = document.getElementById('firstName').value;
+    var lastName = document.getElementById('lastName').value;
+    var zipCode = document.getElementById('zipCode').value;
+
+    // This combines the first and last name with a space in between them.
+    var fullName = firstName + ' ' + lastName;
+
+    // This checks if the names enetered are more than 20 characters.
+    if (fullName.length > 20) {
+        alert('Name cannot exceed 20 characters.'); // This warns the user if the name entered is too long.
+        return; // This exits the function if their name is invalid.
+    }
+
+    // This checks if the zip code entered is exactly 5 digits long.
+    if (!/^\d{5}$/.test(zipCode)) {
+        alert('Please enter a 5-digit zip code.'); // Warn the user if the zip code is invalid.
+        return; // This exits the function if their zip code is invalid.
+    }
+
+    // This shows the secret message if both of the user's inputs are valid.
+    document.getElementById('secretMessage').innerHTML = "<p>OMG! You're In!! Here's the Secret Message: Stay Curious & Question EVERYTHING!!!</p>";
+}
